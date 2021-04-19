@@ -4,15 +4,6 @@
 
 {% block script %}
     <script src="{% static 'javascript/home.js' %}"></script>
-    <script type="text/javascript">
-        let app = new Vue({
-          el: "#vue-app",
-          delimiters: ['[[', ']]'],
-          data: {
-            Title_Name: 'PERSONAL TREE',
-          },
-        });
-    </script>
 {% endblock script %}
 
 {% block content %}
@@ -28,11 +19,14 @@
             </div>    
         </div>
     </div>
-    <div class='serect_item_area'>
-        <div class="box1"><div class='botton_text'>円</div></div>
-        <div class="box1"><div class='botton_text'>円</div></div>
-        <div class="box1"><div class='botton_text'>円</div></div>
-        <div class="box1"><div class='botton_text'>円</div></div>
-        <div class="box1"><div class='botton_text'>円</div></div>
+    <div class='content_area'>
+        <div class='serect_item_area'>
+            <a href="{% url 'github' %}" class="btn-border">GitHub</a>
+            <a href="{% url 'qiita' %}" class="btn-border">Qiita</a>
+            <a href="{% url 'youtube' %}" class="btn-border">Youtube</a>
+            <a href="{% url 'twitter' %}" class="btn-border">twitter</a>
+            <a href="{% url 'hobby' %}" class="btn-border">Hobby</a>
+            <a href="{% url 'portfolio' %}" class="btn-border">Portfolio</a>
+        </div>
     </div>
 {% endblock content %}

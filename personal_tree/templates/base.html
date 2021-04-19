@@ -4,6 +4,7 @@
 <!doctype html>
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <head>
     <title>PERSONAL TREE</title>
@@ -11,19 +12,24 @@
   <body> 
     <div id="vue-app">
         {% block header %}
-            <header class='header_area'>
-                <ul>
-                    <li>LOGO</li>
-                    <li>お問い合わせ</li>
-                    <li>アプリ詳細</li>
-                </ul>
-            </header>
+        <header class='header_area'>
+            <ul>
+                <li>LOGO</li>
+                <li>お問い合わせ</li>
+                <li>アプリ詳細</li>
+            </ul>
+        </header>
         {% endblock header %}
-
-        
         {% block content %}
         {% endblock %}
         {% block footer %}
+        <footer class='footer_area'>
+            <ul class='footer_icon_area'>
+                <li><div class='twitter_icon'>Twitter</div></li>
+                <li><div class='line_icon'>Line</div></li>
+                <li><div class='facebook__icon'>Facebook</div></li>
+            </ul>
+        </footer>
         {% endblock footer %}
     </body>
 </html>

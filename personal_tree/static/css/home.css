@@ -51,28 +51,106 @@
     margin: 7% 2% 0 auto;    
 }
 
+.content_area{
+    height:60vh;
+    /* background-image: url('../image/EzJSVm1VkAc6HrD.jpeg'); */
+    background-image: url('../image/zen-4925496_1920.jpeg');
+    background-size:between;    
+
+}
+
 .serect_item_area{
-    height:100vh;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 800px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    background-image: url('../image/EzJSVm1VkAc6HrD.jpeg');
-    /* background-image: url('../image/S__38502407.jpg'); */
-    background-size:contain;
-
+    flex-wrap: wrap;
+    text-align: center;
 }
 
-.box1{
-    width:100px;
-    height:100px;
-    background:gold;
-    border-radius:100%;
+.btn-border {
+    display: inline-block;
+    border: 2px solid #9ec34b;
+    font-size: 16px;
+    color: #FFF;
+    background-color: #57ab6f;
+    text-decoration: none;
+    margin: 15px;
+    font-weight: bold;
+    padding: 32px 64px;
+    border-radius: 20px;
+    transition: .4s;
+    flex-grow: 3;
+  }
+  
+.btn-border:hover {
+    background-color: #9ec34b;
+    border-color: #cbe585;
+    color: #FFF;
 }
 
-.botton_text{
-    height:60px;
+.footer_icon_area{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    list-style: none;
+    margin-inline-start: 0em;
+    margin-block-end: 0em;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 3%;
+}
+
+
+.footer_icon_area li{
+    padding: 1% 5% 1% 10%;
+}
+
+.footer_icon_area li{
+    margin-right: auto;
+    display:inline-block;
+    justify-content: space-between;
+}
+
+.twitter_icon{
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    background-image: url(../image/EzJSVm1VkAc6HrD.jpeg);
+    background-size: cover;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center; /* 縦方向中央揃え（Safari用） */
+    align-items: center; /* 縦方向中央揃え */
+    -webkit-justify-content: center; /* 横方向中央揃え（Safari用） */
+    justify-content: center; /* 横方向中央揃え */
+}
+
+.line_icon{
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    background-image: url(../image/EzJSVm1VkAc6HrD.jpeg);
+    background-size: cover;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center; /* 縦方向中央揃え（Safari用） */
+    align-items: center; /* 縦方向中央揃え */
+    -webkit-justify-content: center; /* 横方向中央揃え（Safari用） */
+    justify-content: center; /* 横方向中央揃え */
+}
+
+.facebook__icon{
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    background-image: url(../image/EzJSVm1VkAc6HrD.jpeg);
+    background-size: cover;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center; /* 縦方向中央揃え（Safari用） */
+    align-items: center; /* 縦方向中央揃え */
+    -webkit-justify-content: center; /* 横方向中央揃え（Safari用） */
+    justify-content: center; /* 横方向中央揃え */
 }
