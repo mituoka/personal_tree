@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load bootstrap_icons %}
+
+{% block script %}
+    <script src="{% static 'javascript/home.js' %}"></script>
+    <script type="text/javascript">
+        let app = new Vue({
+          el: "#vue-app",
+          delimiters: ['[[', ']]'],
+          data: {
+            Title_Name: 'PERSONAL TREE',
+          },
+        });
+    </script>
+{% endblock script %}
+
+{% block content %}
+    <div class='top_image_area'>
+        <div class='top_content_area'>
+            <div class='title_area'>
+                <h1>PERSONAL TREE</h1>
+            </div>
+            <div class='description_area'>
+                <p>各アプリでの成果物をまとめています。</p>
+                <p>対象のアプリを開き、コンテンツを押すとそのリンクに飛びます。</p>
+                <p>ご依頼・ご相談等はお問い合わせフォームよりご連絡ください</p>
+            </div>    
+        </div>
+    </div>
+    <div class='serect_item_area'>
+        <div class="box1"><div class='botton_text'>円</div></div>
+        <div class="box1"><div class='botton_text'>円</div></div>
+        <div class="box1"><div class='botton_text'>円</div></div>
+        <div class="box1"><div class='botton_text'>円</div></div>
+        <div class="box1"><div class='botton_text'>円</div></div>
+    </div>
+{% endblock content %}

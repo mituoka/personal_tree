@@ -1,0 +1,78 @@
+
+.top_image_area{
+    top:0px;
+    height:93vh;
+    background-image: url('../image/aromatherapy-3581133_1920.jpeg');
+    /* background-image: url('../image/EzJSVm1VkAc6HrD.jpeg'); */
+    /* background-image: url('../image/S__38502407.jpg'); */
+    background-size:cover;
+    vertical-align: bottom;
+}
+
+.header_area{
+    background-color: black;
+    color: antiquewhite;
+    font-size: 20px;
+}
+.header_area ul{
+    display: flex;
+    list-style: none;
+    margin-inline-start: 0em;
+    margin-block-end: 0em;
+}
+
+.header_area li{
+    padding: 1% 5% 1% 10%;
+}
+
+.header_area li:first-child {
+    margin-right: auto;
+    display:inline-block;
+    justify-content: space-between;
+}
+
+.top_content_area{
+    padding-top: 10%;
+}
+
+.title_area{
+    height: 100px;
+    width: 40%;
+    padding: 20px;              /* 余白指定 */
+    text-align:  left;        /* 中央寄せ */
+    background-color: rgba(175,238,238,0.5);    /* 背景色指定 */
+}
+
+.description_area{    
+    width: 30%;
+    padding: 20px;              /* 余白指定 */
+    text-align:  left;        /* 中央寄せ */
+    background-color: rgba(175,238,238,0.5);    /* 背景色指定 */
+    margin: 7% 2% 0 auto;    
+}
+
+.serect_item_area{
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../image/EzJSVm1VkAc6HrD.jpeg');
+    /* background-image: url('../image/S__38502407.jpg'); */
+    background-size:contain;
+
+}
+
+.box1{
+    width:100px;
+    height:100px;
+    background:gold;
+    border-radius:100%;
+}
+
+.botton_text{
+    height:60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
