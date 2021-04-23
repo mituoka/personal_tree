@@ -1,6 +1,6 @@
 .qiita_content_area{
     background-image: url(../image/zen-4925496_1920.jpeg);
-    background-size: cover;
+    background-size: contain;
     font-family: 'Vollkorn', serif;
     /* background-color: aliceblue; */
 }
@@ -16,13 +16,20 @@
 }
 
 .container{
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
     width: 60%;
     margin: 0 auto;
     font-size: 25px;
     padding-top: 3%;
     padding-bottom: 3%;
+}
+
+.qiita_list_area{
+    display: flex;
+    justify-content: space-between;
+    background-color:rgba(255,255,255,0.8);
+    border-radius: 10px;
 }
 
 .column_text{
@@ -32,13 +39,11 @@
 
 .title_list_area{
     color: black;
-    background-color: rgba(255,255,255,0.8);
+    /* background-color: rgba(255,255,255,0.8); */
     display:flex;
     flex-flow: column;
     justify-content: space-between;
     padding-left: 5%;
-    border-radius: 10px;
-
 }
 
 .title_list_area li{
@@ -48,7 +53,7 @@
 
 .link_list_area{
     list-style: none;
-    background-color: rgba(255,255,255,0.8);
+    /* background-color: rgba(255,255,255,0.8); */
     display:flex;
     flex-flow: column;
     flex-wrap: wrap;
@@ -68,7 +73,7 @@
     text-align: right;
     list-style: none;
     font-size: 15px;
-    background-color: rgba(255,255,255,0.8);
+    /* background-color: rgba(255,255,255,0.8); */
     display:flex;
     flex-flow: column;
     justify-content: space-between;
@@ -87,7 +92,7 @@
 
 .like_list_area{
     list-style: none;
-    background-color: rgba(255,255,255,0.8);
+    /* background-color: rgba(255,255,255,0.8); */
     display:flex;
     flex-flow: column;
     justify-content: space-between;
