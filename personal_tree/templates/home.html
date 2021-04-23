@@ -5,7 +5,9 @@
 {% block script %}
     <script src="{% static 'javascript/home.js' %}"></script>
 {% endblock script %}
-
+{% block style %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+{% endblock style %}
 {% block content %}
     <div class='top_image_area'>
         <div class='top_content_area'>
@@ -23,9 +25,7 @@
         <div class='serect_item_area'>
             <a href="{% url 'github' %}" class="btn-border">GitHub</a>
             <a href="{% url 'qiita' %}" class="btn-border">Qiita</a>
-            <a href="{% url 'youtube' %}" class="btn-border">Youtube</a>
-            <a href="{% url 'twitter' %}" class="btn-border">twitter</a>
-            <a href="{% url 'hobby' %}" class="btn-border">Hobby</a>
+            <a href="{% url 'design' %}" class="btn-border">Design</a>
             <a href="{% url 'portfolio' %}" class="btn-border">Portfolio</a>
         </div>
     </div>

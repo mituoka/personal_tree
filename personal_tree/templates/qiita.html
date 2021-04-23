@@ -2,10 +2,49 @@
 {% load static %}
 {% load bootstrap_icons %}
 
+
 {% block script %}
     <script src="{% static 'javascript/home.js' %}"></script>
 {% endblock script %}
+{% block style %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/qiita.css' %}">
+{% endblock style %}
 
 {% block content %}
-qiita
+<div class='qiita_content_area'>
+    <div class='heading'>Aqua_MTの投稿記事</div>
+    <form class="search_area" method="post">
+        {% csrf_token %}
+        <div class="search">
+           <input type="text" class="search_text" size="40" name='search_title' placeholder="Search Title">
+           <button type="submit" class="searchButton">検索</button>
+        </div>
+    </form>
+    <div class="container">
+        <ol class="title_list_area">
+            <div class='column_text'>記事タイトル</div>
+            {% for title in qiita_title_list %}
+                <li>{{title}}</li>
+            {% endfor %}
+        </ol>
+        <ul class="link_list_area">
+            <div class='column_text'>リンク</div>
+            {% for link_id in article_id %}
+                <li><a href="https://qiita.com/Aqua_MT/items/{{link_id}}" target="_blank" rel="noopener"><svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="15" height="15"><path d="M4.5 6.5L1.328 9.672a2.828 2.828 0 104 4L8.5 10.5m2-2l3.172-3.172a2.829 2.829 0 00-4-4L6.5 4.5m-2 6l6-6" stroke="currentColor"></path></svg></a></li>
+            {% endfor %}
+        </ul>
+        <ul class="update_time">
+            <div class='column_text'>更新日</div>
+            {% for update_time in update_time %}
+                <li>{{update_time}}</li>
+            {% endfor %}
+        </ul> 
+        <ul class="like_list_area">
+            <div class='column_text'>いいね数</div>
+            {% for like_count in article_like_count %}
+                <li>{{like_count}}</li>
+            {% endfor %}
+        </ul>        
+    </div>
+</div>
 {% endblock content %}

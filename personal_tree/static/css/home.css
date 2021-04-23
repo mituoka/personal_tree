@@ -9,29 +9,8 @@
     vertical-align: bottom;
 }
 
-.header_area{
-    background-color: black;
-    color: antiquewhite;
-    font-size: 20px;
-}
-.header_area ul{
-    display: flex;
-    list-style: none;
-    margin-inline-start: 0em;
-    margin-block-end: 0em;
-}
-
-.header_area li{
-    padding: 1% 5% 1% 10%;
-}
-
-.header_area li:first-child {
-    margin-right: auto;
-    display:inline-block;
-    justify-content: space-between;
-}
-
 .top_content_area{
+    font-family: 'Vollkorn', serif;
     padding-top: 10%;
 }
 
@@ -52,6 +31,7 @@
 }
 
 .content_area{
+    font-family: 'Vollkorn', serif;
     height:60vh;
     /* background-image: url('../image/EzJSVm1VkAc6HrD.jpeg'); */
     background-image: url('../image/zen-4925496_1920.jpeg');
@@ -68,6 +48,12 @@
     align-items: center;
     flex-wrap: wrap;
     text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.serect_item_area a{
+    flex-basis: calc(33.333333% - 16px);
 }
 
 .btn-border {
@@ -91,66 +77,3 @@
     color: #FFF;
 }
 
-.footer_icon_area{
-    display: flex;
-    list-style: none;
-    margin-inline-start: 0em;
-    margin-block-end: 0em;
-    width: 60%;
-    margin: 0 auto;
-    text-align: center;
-    padding-top: 3%;
-}
-
-
-.footer_icon_area li{
-    padding: 1% 5% 1% 10%;
-}
-
-.footer_icon_area li{
-    margin-right: auto;
-    display:inline-block;
-    justify-content: space-between;
-}
-
-.twitter_icon{
-    border-radius: 100%;
-    width: 100px;
-    height: 100px;
-    background-image: url(../image/EzJSVm1VkAc6HrD.jpeg);
-    background-size: cover;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-align-items: center; /* 縦方向中央揃え（Safari用） */
-    align-items: center; /* 縦方向中央揃え */
-    -webkit-justify-content: center; /* 横方向中央揃え（Safari用） */
-    justify-content: center; /* 横方向中央揃え */
-}
-
-.line_icon{
-    border-radius: 100%;
-    width: 100px;
-    height: 100px;
-    background-image: url(../image/EzJSVm1VkAc6HrD.jpeg);
-    background-size: cover;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-align-items: center; /* 縦方向中央揃え（Safari用） */
-    align-items: center; /* 縦方向中央揃え */
-    -webkit-justify-content: center; /* 横方向中央揃え（Safari用） */
-    justify-content: center; /* 横方向中央揃え */
-}
-
-.facebook__icon{
-    border-radius: 100%;
-    width: 100px;
-    height: 100px;
-    background-image: url(../image/EzJSVm1VkAc6HrD.jpeg);
-    background-size: cover;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-align-items: center; /* 縦方向中央揃え（Safari用） */
-    align-items: center; /* 縦方向中央揃え */
-    -webkit-justify-content: center; /* 横方向中央揃え（Safari用） */
-    justify-content: center; /* 横方向中央揃え */
-}

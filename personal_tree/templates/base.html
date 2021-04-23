@@ -3,31 +3,33 @@
 
 <!doctype html>
 <meta charset="utf-8">
-<link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
 <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<script type="text/javascript" src="./footerFixed.js"></script>
   <head>
-    <title>PERSONAL TREE</title>
+    <title>{{title_name}}</title>
   </head>
   <body> 
     <div id="vue-app">
         {% block header %}
         <header class='header_area'>
             <ul>
-                <li>LOGO</li>
+                <li><a href="{% url 'home' %}" class="logo_area">PERSONAL TREE</a></li>
                 <li>お問い合わせ</li>
                 <li>アプリ詳細</li>
             </ul>
         </header>
         {% endblock header %}
+        {% block style %}
+        {% endblock style %}
         {% block content %}
         {% endblock %}
         {% block footer %}
-        <footer class='footer_area'>
+        <footer id='footer' class='footer_area'>
             <ul class='footer_icon_area'>
-                <li><div class='twitter_icon'>Twitter</div></li>
-                <li><div class='line_icon'>Line</div></li>
-                <li><div class='facebook__icon'>Facebook</div></li>
+                <li><div id='twitter_icon' class='footer_icon'><img src="{% static 'image/twitter_icon.svg' %}" width="100px" height="100px" alt="icon">Twitter</div></li>
+                <li><div id='line_icon' class='footer_icon'><img src="{% static 'image/line_icon.svg' %}" width="100px" height="100px" alt="icon">Twitter</div></li>
+                <li><div id='facebook_icon' class='footer_icon'><img src="{% static 'image/facebook_icon.svg' %}" width="100px" height="100px" alt="icon">Twitter</div></li>
             </ul>
         </footer>
         {% endblock footer %}
